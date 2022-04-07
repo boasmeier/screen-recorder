@@ -90,7 +90,7 @@ async function handleStop(e) {
     const buffer = Buffer.from(await blob.arrayBuffer());
     const { filePath } = await dialog.showSaveDialog({
         buttonLabel: 'Save video',
-        defualtPath: `vid-${Date.now()}.webm`
+        defaultPath: `vid-${Date.now()}.webm`
     });
 
     console.log(filePath);
